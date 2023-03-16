@@ -20,6 +20,7 @@ record(sseq, "$(P)$(R)$(A)Move") {
 
 record(ai, "$(P)$(R)$(A)SP") {
 	field(DESC, "Axis setpoint")
+	field(PREC, "2")
 	field(FLNK, "$(P)$(R)$(A)Move")
 }
 

@@ -16,7 +16,7 @@ dbLoadDatabase "dbd/tableCSMotorInterface.dbd"
 tableCSMotorInterface_registerRecordDeviceDriver pdbbase
 
 ## Load record instances
-dbLoadRecords("db/table_axis_move.db","P=$(PREFIX),R=$(DEVICE),A=$(AXIS),M1Unkill=Motor1UnkillCmd,M2Unkill=Motor2UnkillCmd")
+dbLoadRecords("db/table_axis_move.db","P=$(PREFIX),R=$(DEVICE),A=$(AXIS),M1Unkill=Motor1UnkillCmd,M2Unkill=Motor2UnkillCmd,CSAxis=US")
 
 cd "${TOP}/iocBoot/${IOC}"
 iocInit
