@@ -1,0 +1,8 @@
+bin/
+/db/
+O.darwin-x86/
+dbd/
+O.Common/
+envPaths
+*.swp
+

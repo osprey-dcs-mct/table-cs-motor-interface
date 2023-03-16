@@ -1,0 +1,29 @@
+record(sseq, "$(P)$(R)$(A)Move") {
+	field(DESC,  "Sequencer for moving axis with unkill")
+	field(DO1,   "1")
+	field(LNK1,  "$(P)$(R)$(M1Unkill) PP")
+	field(WAIT1, "NoWait")
+	field(DO2,   "1")
+	field(LNK2,  "$(P)$(R)$(M2Unkill) PP")
+	field(WAIT2, "NoWait")
+	field(DLY3,  "1.0")
+	field(DOL3,  "$(P)$(R)$(A)SP")
+	field(LNK3,  "$(P)$(R)$(CSAxis) PP")
+	field(WAIT3, "Wait")
+	field(DO4,   "0")
+	field(LNK4,  "$(P)$(R)$(M1Unkill) PP")
+	field(WAIT4, "NoWait")
+	field(DO5,   "0")
+	field(LNK5,  "$(P)$(R)$(M2Unkill) PP")
+	field(WAIT5, "NoWait")
+}
+
+record(ai, "$(P)$(R)$(A)SP") {
+	field(DESC, "Axis setpoint")
+	field(FLNK, "$(P)$(R)$(A)Move")
+}
+
+
+
+
+
